@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: node-express-hello-hwnl
+  namespace: karthik-jk-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:8837da94ccad877d398b2d8fbb5fb61b33d6bb6963d7add112e38c49a574befd
+        name: my-nodejs
+        resources: {}
+status: {}
